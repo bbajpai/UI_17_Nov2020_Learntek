@@ -1,0 +1,242 @@
+h2{
+	text-align: center; 
+	color:#ffffff;
+	font-size:30px;
+	text-shadow: 2px 2px 1px #0B5345;
+}
+
+p{
+	font-size: 24px;
+	color:#922B21;
+}
+
+.box1 {
+	width: 280px;
+	height: 280px;
+	background: url('Desert.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-left:10px;
+	display: inline-block;
+	font-size:20px;
+	border-bottom:solid 10px #641E16;
+	color:#154360;
+	text-align:justify;
+	text-decoration:none;
+	text-transform: capitalize;
+	text-indent: 100px;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+	line-height: 2.4;
+
+	
+}
+
+#box2{
+	width:200px;
+	height: 200px;
+	background-color: red;
+}
+
+
+.contentBox{
+	width:400px;
+	height:200px;
+	background-color: green;
+	font-size:24px;
+	/*overflow:auto;*/
+	position:relative;
+	top:200px;
+}
+
+.childContainer{
+	width:100px;
+	height: 100px;
+	background-color: #ADD826;
+	position: absolute;
+	top:100px;
+	left:50px;
+}
+
+.fixedContainer{
+	width:300px;
+	height:50px;
+	background-color: #13507D;
+	position: fixed;
+	bottom:0px;
+	right:0px;
+	color:white;
+	font-size: 30px;
+	font-weight:700;
+}
+
+
+.dummy{
+	width:500px;
+	height:400px;
+	background: url('2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.3;
+}
+
+.dummy:hover{
+	opacity:1;
+}
+.dummy > h2{
+	color:#9BAECD;
+	font-family: verdana;
+	font-size: 30px;
+	background-color: transparent;
+}
+
+.dummy + h2{
+	color: #561348;
+	background-color: transparent;
+	font-size: 32px;
+}
+
+
+a{
+	color: #16A085;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+	color:#0B5345;
+}
+
+
+.borderDiv{
+	width:400px;
+	height:400px;
+	background-color:  #76D7C4;
+	border:10px solid transparent;
+	border-image: url('borderImage.jpg') 25 round;
+	/*border-radius:70%;*/
+	/*border-top-left-radius: 30px;*/
+	/*background-image: linear-gradient(#1A5276, #16A085 15%, #CA6F1E 30%);*/
+	/*background-image: repeating-radial-gradient(#DE3163 ,#FFBF00 10%,#16A085 15%);*/
+	
+}
+
+.borderDiv:hover{
+	box-shadow: 10px 10px 15px #5D6D7E;
+}
+
+
+.transDiv{
+	width:300px;
+	height:300px;
+	background-color:  #76D7C4;
+	transform:translate(100px, 200px);
+}
+
+.rotateDiv{
+	width:300px;
+	height:300px;
+	background-color: #9E1F59;
+	
+}
+
+.rotateDiv:hover{
+	transform: rotate(-60deg);
+}
+
+.scaleDiv{
+	width:300px;
+	height:300px;
+	background-color: #9E1F59;
+	transform: scaleX(1);
+}
+.scaleDiv:hover{
+	transform: scale(1.2,1.2);
+}
+
+.skewDiv{
+	width:300px;
+	height:300px;
+	background-color: #9E1F59;
+	transform: skewY(20deg);
+}
+
+
+.transitionDiv{
+	width:200px;
+	height:200px;
+	background-color: #9E1F59;
+	transition: width 2s, height 2s, transform 2s;
+}
+
+.transitionDiv:hover{
+	width:400px;
+	height:400px;
+	transition-timing-function: ease-out;
+	/*transition-delay:5s;*/
+	transform: rotate(270deg);
+}
+
+.animateDiv{
+	width:200px;
+	height:200px;
+	background-color: #9E1F59;
+	position: relative;
+	/*animation-name:changeColorPosition;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	animation-iteration-count:infinite;
+	animation-direction: alternate;*/
+	animation:changeColorPosition 5s linear 2s infinite alternate ;
+	
+
+}
+
+
+@keyframes changeColor{
+	/*from {background-color:#9E1F59;}
+	to {background-color:#E3C21E;}*/
+	0% {background-color:#9E1F59; }
+	25% {background-color: #1995DC;}
+	50% {background-color: #60DC19;}
+	100% {background-color: #DC2B19;}
+}
+
+@keyframes changeColorPosition{
+	0% {background-color:#9E1F59; left:0px; top:0px; }
+	25% {background-color: #1995DC; left:300px; top:0px;}
+	50% {background-color: #60DC19; left:300px; top:400px;}
+	75% {background-color: #A7B317 ; left:0px; top:400px;}
+	100% {background-color: #DC2B19; left:0px; top:0px;}
+}
+
+
+@media (min-width:300px) and (max-width:600px){
+	body{
+		background-color: green;
+	}
+}
+
+@media (min-width:601px) and (max-width:900px){
+	body{
+		background-color: yellow;
+	}
+}
+
+@media (min-width:901px) and (max-width:1200px){
+	body{
+		background-color: red;
+	}
+
+	.boxContainer{
+		
+	}
+}
+
+
+@media (min-width:1201px){
+	body{
+		background-color: blue;
+	}
+}

@@ -2,44 +2,52 @@
 <html>
 	<head>
 		<title>Table Page</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<h2>Table Tag</h2>
 		
-		<table border="5" cellspacing="5" cellpadding="5" width="500" >
+
+		<div class="container">
+			<h2>Table Tag</h2>
+			<table class="table table-bordered table-hover ">
 			<thead>
-				<th colspan="2">Full Name</th>
-				
+				<th>First Name</th>
+				<th>Last Name</th>
 				<th>Designation</th>
 				<th>Email ID</th>
 			</thead>
 			<tbody>
-				<tr>
+				<tr class="success">
 					<td>ABC</td>
 					<td>QWE</td>
 					<td>SE</td>
 					<td>abc_qwe@gmail.com</td>
 				</tr>
-				<tr>
+				<tr class="danger">
 					<td>XYZ</td>
 					<td>PQWE</td>
 					<td>SSE</td>
 					<td>xyz_pqwe@gmail.com</td>
 				</tr>
-				<tr>
+				<tr class="info">
 					<td>Dummy</td>
 					<td>data</td>
-					<td rowspan="2">SE</td>
+					<td>SE</td>
 					<td>dummy_data@gmail.com</td>
 				</tr>
-				<tr>
+				<tr class="warning">
 					<td>Dummy1</td>
 					<td>data1</td>
+					<td>SE</td>
 					<td>dummy1_data1@gmail.com</td>
 				</tr>
 			</tbody>
 
 		</table>
+		</div>
+		
+		
 
 	</body>
 </html>
