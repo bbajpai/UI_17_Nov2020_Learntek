@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Js DOM</title>
+		<style type="text/css">
+			
+			.dummy{
+				color:blue;
+				font-size: 40px;
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="para1"></p>
+		<p class="message"  id="para2"></p>
+		<p class="message"> </p>
+		<img id="img1" src="1.jpg" width=300 height=300/>
+		<a href="abc" id="link1">Link1</a>
+		<script>
+			var paraObject = document.getElementById("para1");
+			paraObject.innerHTML = "Hi!! this is a para created via JS";
+			/** Adding Inline CSS **/
+			paraObject.style.color = "red";
+			paraObject.style.fontSize = "30px";
+
+
+			/** Adding CSS Class **/
+			paraObject.classList.add("dummy");
+
+			/*paraObject.addClass("dummy");*/
+
+			var para2 = document.getElementById("para2");
+
+			var paraClassObject = document.getElementsByClassName('message');
+
+			para2.innerHTML = "Hi!! Added Again "
+
+			console.log(paraClassObject);
+
+
+			var imageObject = document.getElementById("img1");
+			imageObject.src="2.jpg";
+			imageObject.width = 600;
+
+			var linkObject = document.getElementById("link1");
+			linkObject.href = "";
+
+		</script>
+
+	</body>
+</html>

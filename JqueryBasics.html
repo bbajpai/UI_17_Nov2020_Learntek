@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jquery Basics</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<style>
+			.box1{
+				width:300px;
+				height:300px;
+				background:red;
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<h2> This is my Heading</h2>
+		<p id="para1"> This is content para</p>
+		<p id="para2" class="abc"> This is second para</p>
+
+
+		<div id="b1" class="box1"></div>
+
+		<!--<button id="btn1"> Click To Hide Para</button>
+		<button id="btn2"> Click To Show Para</button>
+
+
+
+		<button id="btn3"> Click To Hide/Show Para</button>-->
+
+		<button id="fadeinBtn"> Fade In</button>
+		<button id="fadeOutBtn"> Fade out</button>
+		<button id="fadeToggleBTN"> Fade IN/OUT</button>
+
+		<script>
+			//$(selector).action()
+
+			$(document).ready(function(){
+				$('#btn1').click(function(){
+					$('.abc').hide(3000);
+				});
+
+				$('#btn2').click(function(){
+					$('.abc').show(2000);
+				});
+				$('#btn3').click(function(){
+					$('.abc').toggle();
+				});
+				$('#fadeinBtn').click(function(){
+					$('#b1').fadeIn(4000);
+				});
+				$('#fadeOutBtn').click(function(){
+					$('#b1').fadeOut(4000);
+				});
+
+				$('#fadeToggleBTN').click(function(){
+					$('#b1').fadeToggle(4000);
+				});
+
+
+			});
+		</script>
+
+		
+
+	</body>
+</html>

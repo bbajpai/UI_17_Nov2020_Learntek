@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Js Events</title>
+		<style type="text/css">
+			.box1{
+				background-color: #33A27B;
+				width:200px;
+				height: 200px;
+				color:white;
+				font-size: 30px;
+				padding:50px;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="para1"></p>
+		<h1 id="head1" onclick="updateHeading()">This is Heading 1</h1>
+
+		<div class="box1" onmouseover="onMouseDiv(this)" onmouseout="onMouseOut(this)" >
+			On Load
+		</div>
+
+		<button type="button" onclick="sum(20,30)">Get Sum </button>
+
+		<script>
+			var para = document.getElementById("para1");
+			var head1 = document.getElementById("head1");
+
+			function sum(a,b){
+				var c = a+b;
+				para.innerHTML = c;
+			}
+
+			function updateHeading(){
+				head1.innerHTML = "Heading Updated Via Event";
+			}
+
+			function onMouseDiv(obj){
+				obj.innerHTML = "Hi!! I am onMouseHover event";
+				obj.style.background ="red";
+			}
+			function onMouseOut(obj){
+				obj.innerHTML = "Hi!! I am onMouseOut event";
+				obj.style.background ="yellow";
+			}
+		</script>
+
+
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Js Basics</title>
+	</head>
+	<body>
+
+		<script>
+
+
+			var message= "Hi!! How are you";
+
+			var len= message.length;
+			console.log(' message  '+message);
+			console.log('Length of message  '+len);
+
+			var position = message.indexOf('How');
+			console.log('Position of are   :: '+ position);
+
+			//var newString = message.slice(3,4);
+			var newString = message.substr(3,4);
+
+			console.log('New String is ::: '+ newString);
+
+			if(position >=0){
+				console.log('String exist');
+			}
+			else{
+				console.log('String does not exist');
+			}
+
+
+			/*var data = [11,12,13,14,"abc",true];
+			var data2 = ['Hi','hello'];
+
+			var data3 = data.concat(data2);
+
+			console.log('data  '+data3);
+
+			data.push(90);
+			data.push(30);
+			console.log('New data  '+data);
+			data.pop();
+			console.log('Pop data  '+data);
+
+			data[1]= 46;
+			console.log('Pop data  '+data);
+
+			data.shift();
+			console.log('Shift data  '+data);
+
+			data.unshift('huad');
+			console.log('unShift data  '+data);
+
+
+			var formattedDATA = data.join('#');
+			console.log('Pop data  '+formattedDATA);*/
+
+			var age = '18';
+			
+			console.log('Sum is '+result);
+			/*if(age===18){
+				console.log('You are 18 years old');
+			}
+			else{
+				console.log('Not allowed');
+			}*/
+			var result=sum(22,34);
+			function sum(a,b){
+				return a+b;
+			}
+			// Sum with Arrow
+
+			var sumArrow = (a,b)=>{ return a+b};
+
+			// Normal funcrion 
+			var fun1 = function(){
+				return "hello";
+			}
+
+			//Arrow Function
+
+			var fun2 = ()=>{
+				return "hello!!!"
+			} 
+
+			fun1();
+			fun2();
+			sumArrow(10,20);
+
+		</script>
+
+	</body>
+</html>

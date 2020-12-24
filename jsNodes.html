@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Js Nodes</title>
+
+	</head>
+	<body>
+		<div id="container">
+		</div>
+
+		<script>
+			var container =  document.getElementById("container");
+
+			// Start creating paragraph
+			var para = document.createElement("p");//<p></p>
+			var text = document.createTextNode("This is a para created by JS ..."); //This is a para created by JS ...
+			//append text inside para
+			para.appendChild(text);
+
+			container.appendChild(para);
+
+
+		</script>
+
+
+	</body>
+</html>

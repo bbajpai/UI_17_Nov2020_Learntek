@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jquery Basics</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<style>
+			.box1{
+				width:100%;
+				height:300px;
+				background:red;
+				color:white;
+				font-size:24px;
+
+				/**display:none;**/
+
+			}
+			.slideHeading{
+				text-align:center;
+				background:green;
+				color:white;
+				font-size:30px;
+			}
+			.changeColor{
+				color:#77A5B4;
+				background:#07303D;
+			}
+			.boldText{
+				font-weight:700;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="slideHeading boldText">Topic1</div>
+		<div id="b1" class="box1">
+			Lorem Ipsum is <u> simply </u><b>dummy </b>text-align
+		</div>
+
+		<button id="getData">Get Data</button>
+		<button id="appendData">Change Style</button>
+
+
+		<script>
+			//$(selector).action()
+
+			$(document).ready(function(){
+				$('#getData').click(function(){
+					alert($('#b1').text());
+				});
+				$('#appendData').click(function(){
+					$('.slideHeading').addClass('changeColor');
+					$('.slideHeading').removeClass('boldText');
+				});
+
+
+			});
+		</script>
+
+		
+
+	</body>
+</html>
